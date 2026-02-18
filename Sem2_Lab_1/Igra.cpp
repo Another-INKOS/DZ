@@ -17,7 +17,7 @@ void sortByColor(Igra arr[], int size) {
     }
 }
 
-void sortByEarsize(Igra arr[], int size) {
+void sortByRating(Igra arr[], int size) {
     for (int i = 0; i < size - 1; i++) {
         for (int j = 0; j < size - i - 1; j++) {
             if (arr[j].rating > arr[j + 1].rating) {
