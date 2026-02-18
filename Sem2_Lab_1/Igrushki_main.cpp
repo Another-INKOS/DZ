@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "../Igra.h"
+#include "Igra.h"
 using namespace std;
 
 int main() {
@@ -26,11 +26,13 @@ int main() {
     for (int i = 0; i < count; ++i) {
         arr[i].print();
     }
+    cout << endl;
     sortByColor(arr, count);
     cout <<"Igrushki po cvetu:" << endl;
     for (int i = 0; i < count; ++i) {
         arr[i].print();
     }
+    cout << endl;
     sortByRating(arr, count);
     cout << "Igrushki po ratingu:" << endl;
     for (int i = 0; i < count; ++i) {
