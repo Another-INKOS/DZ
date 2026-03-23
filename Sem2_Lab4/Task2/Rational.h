@@ -8,12 +8,9 @@ public:
     // Методы для получения числителя и знаменателя
     int Numerator() const;
     int Denominator() const;
-
-    // Унарные операторы
     Rational operator+() const;
     Rational operator-() const;
 
-    // Операторы присваивания (составные)
     Rational& operator+=(const Rational& other);
     Rational& operator-=(const Rational& other);
     Rational& operator*=(const Rational& other);
@@ -26,7 +23,6 @@ private:
     int num; // числитель
     int den; // знаменатель
 
-    // Метод для сокращения дроби
     void simplify();
 };
 
